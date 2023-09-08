@@ -13,9 +13,7 @@ return new class extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             //
-            Schema::table('posts', function (Blueprint $table) {
-                $table->foreignId('user_id')->after('image');
-            });
+            $table->foreignId('user_id')->after('image');
         });
     }
 
@@ -26,9 +24,7 @@ return new class extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             //
-            Schema::table('posts', function (Blueprint $table) {
-                $table->dropColumn('user_id');
-            });
+            $table->dropColumn('user_id');
         });
     }
 };
